@@ -1,0 +1,90 @@
+:root {
+    --bg-color: #272727; 
+    --fg-color: #ead8d6;
+    --link-color: #C3D7E9;
+    --link-hover-color: #DC4D44;
+    --link-visited-color: #DD786D;
+    --header: #FA8943;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background: var(--bg-color);
+    color: var(--fg-color);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 30% 60% 1fr;
+   grid-template-rows: 90vh;
+   column-gap: 50px;
+   grid-template-areas: ". pic text .";
+   justify-items: center;
+   align-items: center;
+   min-height: 100%;
+}
+
+.pic-container {
+    grid-area: pic;
+}
+
+.pic img {
+    border-color: var(--link-visited-color);
+    border-style: solid;
+    border-width: 2px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-container {
+    grid-area: text;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    font-size: 20px;
+    color: var(--header);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
