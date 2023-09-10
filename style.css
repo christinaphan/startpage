@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #1e1e2e; 
-    --fg-color: #cdd6f4;
-    --link-color: #cdd6f4;
-    --link-hover-color: #74c7ec;
-    --link-visited-color: #cdd6f4;
-    --header: #fab387;
+    --bg-color: #2a273f;
+    --fg-color: #e0def4;
+    --link-color: #e0def4;
+    --link-hover-color: #3e8fb0;
+    --link-visited-color: #e0def4;
+    --header: #eb6f92;
 }
 
 body {
